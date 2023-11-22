@@ -59,18 +59,18 @@ class HashTable:
 # Example usage:
 hash_table = HashTable(10)
 
-hash_table.insert("fifteen", 15)
-hash_table.insert("eighteen", 18)
-hash_table.insert("ten", 10)
-hash_table.insert("twenty-five", 25)
-hash_table.insert("fourteen", 14)
-hash_table.insert("twenty-four", 24)
+hash_table.insert(15, "fifteen")
+hash_table.insert(18, "eighteen")
+hash_table.insert(10, "ten")
+hash_table.insert(25, "twenty-five")
+hash_table.insert(14, "fourteen")
+hash_table.insert(24, "twenty-four")
 
 hash_table.display()
 
-print("Search 'ten':", hash_table.search("ten"))
-print("Search 'four':", hash_table.search("four"))
+print("Search 'ten':", hash_table.search(10))
+print("Search 'four':", hash_table.search(4))
 
-hash_table.remove("fifteen")
+hash_table.remove(15)
 
 hash_table.display()
