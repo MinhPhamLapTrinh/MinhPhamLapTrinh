@@ -63,6 +63,8 @@ class LinkedList:
             print(curr.get_data())
             curr = curr.next
         return None
+    def get_front(self):
+        return self.front.data
 
 
 list = LinkedList()
@@ -77,3 +79,4 @@ list.push_front(5)
 list.push_back(6)
 
 list.printList()
+print(f"The front value is: {list.get_front()}")
